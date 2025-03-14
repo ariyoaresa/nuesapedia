@@ -1,90 +1,115 @@
 import React from 'react'
 
-const Level100courses = () => {
+const Level200courses = () => {
     const courses = [
         {
-            coursecode: "CHM 101",
-            coursename: "General Chemistry",
+            coursecode: "CVE 204",
+            coursename: "Strength Of Material I.",
             courselink: "#",
         },
         {
-            coursecode: "CHM 102",
-            coursename: "General Chemistry II",
+            coursecode: "EEE 202",
+            coursename: "Introduction To Electrical Engineering.",
             courselink: "#",
         },
         {
-            coursecode: "CPE 101",
-            coursename: "Computers and computing for engineers.",
+            coursecode: "EEE 204",
+            coursename: "Basic Electrical Engineering.",
             courselink: "#",
         },
         {
-            coursecode: "GST 101",
-            coursename: "Communication in English I",
+            coursecode: "ENG 201",
+            coursename: "Engineering Mathematics I.",
             courselink: "#",
         },
         {
-            coursecode: "GST 102",
-            coursename: "Communication in English II",
+            coursecode: "ENG 202",
+            coursename: "Engineering Mathematics II",
             courselink: "#",
         },
         {
-            coursecode: "GST 103",
-            coursename: "Use of Library and ICT",
+            coursecode: "ENG 203",
+            coursename: "General Engineering Laboratory I.",
             courselink: "#",
         },
         {
-            coursecode: "GST 105",
-            coursename: "Introduction To Entrepreneurship.",
+            coursecode: "ENG 204",
+            coursename: "General Engineering Laboratory II",
             courselink: "#",
         },
         {
-            coursecode: "GST 106",
-            coursename: "Evaluation Opportunity And Business Concept.",
+            coursecode: "ENG 205",
+            coursename: "Logic And Philosophy.",
             courselink: "#",
         },
         {
-            coursecode: "GST 108/110",
-            coursename: "Government Society & Economy.",
+            coursecode: "GST 202",
+            coursename: "Peace Studies And Conflict Resolution.",
             courselink: "#",
         },
         {
-            coursecode: "MTH 101",
-            coursename: "Elementary Mathematics I.",
+            coursecode: "GST 203",
+            coursename: "Feasibility Plan And Investment Decision making.",
             courselink: "#",
         },
         {
-            coursecode: "MTH 102",
-            coursename: "Elementary Mathematics II",
+            coursecode: "GST 204",
+            coursename: "Resource Management And Organization Behaviour.",
             courselink: "#",
         },
         {
-            coursecode: "MTH 103",
-            coursename: "Elementary Mathematics III",
+            coursecode: "GST 205",
+            coursename: "Logic And Philosophy.",
             courselink: "#",
         },
         {
-            coursecode: "MTH 104",
-            coursename: "Elementary Mathematics IV",
+            coursecode: "MEE 201",
+            coursename: "Workshop Technology I.",
             courselink: "#",
         },
         {
-            coursecode: "PYH 101",
-            coursename: "General Physics I.",
+            coursecode: "MEE 203",
+            coursename: "Applied Mechanics.",
             courselink: "#",
         },
         {
-            coursecode: "PYH 102",
-            coursename: "General Physics II",
+            coursecode: "MEE 204",
+            coursename: "Workshop Technology II.",
             courselink: "#",
         },
         {
-            coursecode: "PYH 103",
-            coursename: "General Physics III",
+            coursecode: "MEE 205",
+            coursename: "Thermodynamics.",
             courselink: "#",
         },
         {
-            coursecode: "PYH 104",
-            coursename: "General Physics IV",
+            coursecode: "MEE 206",
+            coursename: "Fluid Mechanics I.",
+            courselink: "#",
+        },
+        {
+            coursecode: "MEE 207",
+            coursename: "Engineering Drawing I.",
+            courselink: "#",
+        },
+        {
+            coursecode: "MEE 208",
+            coursename: "Engineering Drawing II.",
+            courselink: "#",
+        },
+        {
+            coursecode: "MME 201",
+            coursename: "Material Science.",
+            courselink: "#",
+        },
+        {
+            coursecode: "MTE 201",
+            coursename: "Computer-aided Engineering I.",
+            courselink: "#",
+        },
+        {
+            coursecode: "MTE 204",
+            coursename: "Computer-aided Engineering II.",
             courselink: "#",
         },
     ]
@@ -126,4 +151,4 @@ const Level100courses = () => {
   )
 }
 
-export default Level100courses
+export default Level200courses
