@@ -9,7 +9,7 @@ const Navbar = () => {
             <li className='hover:underline'><a href="/courses">Courses</a></li>
             <li className='hover:underline'><a href="/contact">Contact</a></li>
             <li className='hover:underline'><a href="/blog">Blog</a></li>
-            <li className='hover:underline'><a href="https://github.com">Contribute</a></li>
+            <li className='hover:underline'><a href="https://github.com/ariyoaresa/nuesapedia">Contribute</a></li>
             <li className='hover:underline'><a href="#">Add a PDF</a></li>
         </div>
         <details  className='md:hidden'>
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className='hover:underline'><a href="/courses">Courses</a></li>
                 <li className='hover:underline'><a href="/contact">Contact</a></li>
                 <li className='hover:underline'><a href="/blog">Blog</a></li>
-                <li className='hover:underline'><a href="https://github.com">Contribute</a></li>
+                <li className='hover:underline'><a href="https://github.com/ariyoaresa/nuesapedia">Contribute</a></li>
                 <li className='hover:underline'><a href="#">Add a PDF</a></li>
             </div>
         </details>
