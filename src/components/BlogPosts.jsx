@@ -41,8 +41,8 @@ const BlogPosts = () => {
   ];
   return (
     <section className='m-6'>
-        <h2 className='font-bold mb-4'>Latest Blog</h2>
-        <div className="grid my-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+        <h2 className='font-bold mb-4'>Latest Blog Post</h2>
+        <div className="grid my-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5" id='articles'>
         {posts.map((post, index) => (
             <article key={index} className="card hover:-translate-y-2 ease-in-out transition-transform flex flex-col min-w-72 p-3 rounded-lg bg-white justify-center">
                 <img src={post.image} alt="" className='rounded'/> 

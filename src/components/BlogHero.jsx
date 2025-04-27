@@ -8,7 +8,8 @@ const BlogHero = () => {
             <img src={BlogHeroImage} alt="Blog Placholder" className='rounded-lg md:w-[200px] w-[300px]' />
             <div>
                 <h2>Welcome to the Faculty Blog</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ducimus tempore, neque laboriosam, id beatae doloribus quod pariatur deserunt maiores nam sint. Quisquam id eaque distinctio officia iste laboriosam reprehenderit.</p>
+                <p className='mb-2'>Stay updated with latest news, articles, and insights from our esteemed faculty members</p>
+                <a href="#articles" className='bg-green-700 text-white rounded-md inline-block p-2'>Read Articles</a>
             </div>
         </div>
     </section>

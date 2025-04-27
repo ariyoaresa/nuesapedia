@@ -9,13 +9,13 @@ const CoursesLevel = () => {
         },
         {
             image: "https://placehold.jp/300x300.png",
-            levelnumber: "200 Level",
+            levelnumber: "200",
             levellink: "/courses/200level",
         },
         {
             image: "https://placehold.jp/300x300.png",
             levelnumber: "300",
-            levellink: "#",
+            levellink: "/courses/300level",
         },
         {
             image: "https://placehold.jp/300x300.png",
