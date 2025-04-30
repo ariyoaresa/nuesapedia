@@ -46,7 +46,7 @@ const Contact = () => {
           <label htmlFor="message" className='align-top'>Message:</label>
           <textarea id='message' name='message' placeholder='Your message goes here...' type="text" className='w-full' onChange={handleChange} value={formData.message} required />
         </div>
-        <input className='bg-green-700 p-2 rounded-md text-white' type="submit" value="Send Message" />
+        <input className='bg-green-700 p-2 rounded-md text-white cursor-pointer' type="submit" value="Send Message" />
       </form>
     </section>
     </>
