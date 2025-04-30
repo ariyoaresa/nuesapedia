@@ -1,44 +1,46 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import React, { Suspense } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { Suspense } from 'react';
 
-import './App.css'
-import './index.css'
-const Navbar = React.lazy(() => import ('./components/Navbar'));
-const Footer = React.lazy(() =>import ('./components/Footer'));
-const Home = React.lazy(() =>import('./pages/Home'));
-const Blog = React.lazy(() =>import('./pages/Blog'));
-const Contact = React.lazy(() =>import('./pages/Contact'));
-const Course = React.lazy(() =>import('./pages/Course'));
-const Level100 = React.lazy(() =>import('./pages/Level100'));
-const Level200 = React.lazy(() =>import('./pages/Level200'));
-const Level300 = React.lazy(() =>import('./pages/Level300'));
+import './App.css';
+import './index.css';
 
-
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const Home = React.lazy(() => import('./pages/Home'));
+const Blog = React.lazy(() => import('./pages/Blog'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const Course = React.lazy(() => import('./pages/Course'));
+const Level100 = React.lazy(() => import('./pages/Level100'));
+const Level200 = React.lazy(() => import('./pages/Level200'));
+const Level300 = React.lazy(() => import('./pages/Level300'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      <Router>
-        <Suspense fallback={<div>Loading...</div>}>
+    <Router>
+      <Suspense fallback={
+        <div className="flex flex-col items-center justify-center min-h-screen text-center text-xl p-6 animate-pulse">
+          <div className="w-10 h-10 border-4 border-dashed rounded-full border-green-500 animate-spin mb-4"></div>
+          <p className="text-green-600 font-semibold">Nuesapedia is fetching your knowledge scrolls... 📚✨</p>
+        </div>
+      }>
+        <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path='/courses' element={<Course/>} />
-        <Route path='/courses/100level' element={<Level100/>} />
-        <Route path='/courses/200level' element={<Level200/>} />
-        <Route path='/courses/300level' element={<Level300/>} />
-
-        {/* Catch all Not found pages
-        <Route path="*" element={<NotFound />} />
-         */}
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path='/courses' element={<Course />} />
+          <Route path='/courses/100level' element={<Level100 />} />
+          <Route path='/courses/200level' element={<Level200 />} />
+          <Route path='/courses/300level' element={<Level300 />} />
+          {/* Catch all NotFound pages */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
-        </Suspense>
-      </Router>
-      <Footer/>
-    </>
+        <Footer />
+      </Suspense>
+    </Router>
   )
 }
 
-export default App
+export default App;
+ 

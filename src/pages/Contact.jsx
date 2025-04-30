@@ -1,6 +1,6 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 import { useState } from 'react'
-import { useEffect } from 'react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,6 +17,19 @@ const Contact = () => {
     console.log(formData);
   }
   return (
+    <>
+    <Helmet>
+      <title>Contact | Nuesapedia</title>
+      <meta
+        name="description"
+        content="Contact NUESA FUOYE. Stay in touch with Nuesapedia."
+      />
+      <meta name="keywords" content="nuesapedia contact, contact nuesapedia, contact nuesa, student tips, university advice, nuesa fuoye, nusapedia, study hacks" />
+      <meta property="og:title" content="Nuesapedia contact" />
+      <meta property="og:description" content="Tips and insights to help Nigerian students thrive in university." />
+      <meta property="og:image" content="/images/contact-banner.jpg" />
+      <link rel="canonical" href="https://nuesapedia.vercel.app/contact" />
+    </Helmet>
     <section>
       <form method="post" className='flex justify-center flex-col' onSubmit={handleSubmit}>
         <div className='grid md:grid-cols-2 md:gap-5'>
@@ -36,6 +49,7 @@ const Contact = () => {
         <input className='bg-green-700 p-2 rounded-md text-white' type="submit" value="Send Message" />
       </form>
     </section>
+    </>
   )
 }
 
