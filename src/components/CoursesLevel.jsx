@@ -1,30 +1,35 @@
 import React from 'react'
+import Level100 from '../assets/images/100-level.webp'
+import Level200 from '../assets/images/200-level.webp'
+import Level300 from '../assets/images/300-level.webp'
+import Level400 from '../assets/images/400-level.webp'
+import Level500 from '../assets/images/500-level.webp'
 import { Link } from 'react-router-dom'
 
 const CoursesLevel = () => {
     const Levels = [
         {
-            image: "https://placehold.jp/300x300.png",
+            image: Level100,
             levelnumber: "100",
             levellink: "/courses/100level",
         },
         {
-            image: "https://placehold.jp/300x300.png",
+            image: Level200,
             levelnumber: "200",
             levellink: "/courses/200level",
         },
         {
-            image: "https://placehold.jp/300x300.png",
+            image: Level300,
             levelnumber: "300",
             levellink: "/courses/300level",
         },
         {
-            image: "https://placehold.jp/300x300.png",
+            image: Level400,
             levelnumber: "400",
             levellink: "#",
         },
         {
-            image: "https://placehold.jp/300x300.png",
+            image: Level500,
             levelnumber: "500",
             levellink: "#",
         },
