@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Level200courses = () => {
     const courses = [
@@ -40,7 +41,7 @@ const Level200courses = () => {
         {
             coursecode: "ENG 205",
             coursename: "Logic And Philosophy.",
-            courselink: "#",
+            courselink: "/courses/200level/eng205",
         },
         {
             coursecode: "GST 202",
@@ -126,24 +127,24 @@ const Level200courses = () => {
     return (
     <section className=''>
         <ul className='class="list-none p-0 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5'>
-        <h3 className='font-bold'>1st Semester</h3>
+        <li className='font-bold text-lg'>1st Semester</li>
             {firstsemester.map((course, index) => (
                 <li key={index} className="bg-white rounded-[10px] shadow-md transition-transform duration-300 hover:-translate-y-1 ease-in-out">
-                    <a href={course.courselink} className="block p-4">
+                    <Link to={course.courselink} className="block p-4">
                     <p className="font-bold text-green-700 mb-5">{course.coursecode}</p>
                     <p>{course.coursename}</p>
-                    </a>
+                    </Link>
                 </li>
             ))}
         </ul>
         <ul className='class="list-none p-0 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5 my-4'>
-        <h3 className='font-bold'>2nd Semester</h3>
+        <li className='font-bold text-lg'>2nd Semester</li>
             {secondsemester.map((course, index) => (
                 <li key={index} className="bg-white rounded-[10px] shadow-md transition-transform duration-300 hover:-translate-y-1 ease-in-out">
-                    <a href={course.courselink} className="block p-4">
+                    <Link to={course.courselink} className="block p-4">
                     <p className="font-bold text-green-700 mb-5">{course.coursecode}</p>
                     <p>{course.coursename}</p>
-                    </a>
+                    </Link>
                 </li>
             ))}
         </ul>

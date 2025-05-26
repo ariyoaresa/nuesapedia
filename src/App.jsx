@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { Suspense } from 'react';
+import ScrollToTop from './components/ScrollToTop'
 
-import './App.css';
 import './index.css';
 
 const Navbar = React.lazy(() => import('./components/Navbar'));
@@ -13,6 +13,8 @@ const Course = React.lazy(() => import('./pages/Course'));
 const Level100 = React.lazy(() => import('./pages/Level100'));
 const Level200 = React.lazy(() => import('./pages/Level200'));
 const Level300 = React.lazy(() => import('./pages/Level300'));
+const Chm101 = React.lazy(() => import('./pages/Chm101'));
+const Eng205 = React.lazy(() => import('./pages/Eng205'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
           <p className="text-green-600 font-semibold">Nuesapedia is fetching your knowledge scrolls... 📚✨</p>
         </div>
       }>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,6 +36,8 @@ function App() {
           <Route path='/courses/100level' element={<Level100 />} />
           <Route path='/courses/200level' element={<Level200 />} />
           <Route path='/courses/300level' element={<Level300 />} />
+          <Route path='/courses/100level/chm101' element={<Chm101 />} />
+          <Route path='/courses/200level/eng205' element={<Eng205 />} />
           {/* Catch all NotFound pages */}
           <Route path="*" element={<NotFound />} />
         </Routes>

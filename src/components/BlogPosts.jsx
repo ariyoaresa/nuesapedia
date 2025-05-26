@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BlogPosts = () => {
   const posts = [
@@ -48,11 +49,11 @@ const BlogPosts = () => {
                 <img src={post.image} alt="" className='rounded' loading='lazy'/> 
                 <h3 className='font-bold text-2xl mb-2'>{post.title}</h3>
                 <p className='text-ellipsis overflow-hidden mb-2'>{post.description}</p>
-                <a href={post.content} className='bg-green-600 rounded-lg text-white text-center p-2'>Read More</a>
+                <Link to={post.content} className='bg-green-600 rounded-lg text-white text-center p-2'>Read More</Link>
             </article>
         ))}
         </div>
-        <div className='my-4'><a href="#" className="bg-green-700 p-4 rounded-lg text-white flex self-center justify-center">See more posts</a></div>
+        <div className='my-4'><Link to="#" className="bg-green-700 p-4 rounded-lg text-white flex self-center justify-center">See more posts</Link></div>
     </section>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import BlogHeroImage from "../assets/images/news.png"
+import { Link } from 'react-router-dom'
 
 const BlogHero = () => {
   return (
@@ -9,7 +10,7 @@ const BlogHero = () => {
             <div>
                 <h2>Welcome to the Faculty Blog</h2>
                 <p className='mb-2'>Stay updated with latest news, articles, and insights from our esteemed faculty members</p>
-                <a href="#articles" className='bg-green-700 text-white rounded-md inline-block p-2'>Read Articles</a>
+                <Link to="#articles" className='bg-green-700 text-white rounded-md inline-block p-2'>Read Articles</Link>
             </div>
         </div>
     </section>

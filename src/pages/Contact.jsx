@@ -15,6 +15,11 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    setFormData({
+      fullname: "",
+      email: "",
+      message: "",
+    })
   }
   return (
     <>
