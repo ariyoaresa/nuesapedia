@@ -8,8 +8,8 @@ const CourseMaterials = () => {
       content: "https://link.storjshare.io/raw/juhlgcomysljhw7yynzzvphmtjbq/nueapedia/200l%2F200l%201st%20semester%2Feng%20205/200L%20first%20semester%20past%20questions.pdf",
     },
     {
-      title: "ENG 205",
-      content: "#",
+      title: "ENG 205 hand out class 1-5.pdf",
+      content: "https://link.storjshare.io/raw/jv5a52i6rm3teidxqhcblyvxebcq/nueapedia/200l%2F200l%201st%20semester%2Feng%20205/ENG%20205%20hand%20out%20class%201-5.pdf",
     },
   ];
   return (
