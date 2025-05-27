@@ -41,7 +41,7 @@ const BlogPosts = () => {
     },
   ];
   return (
-    <section>
+    <section id='articles'>
         <h2 className='font-bold mb-4 s'>Latest Blog Post</h2>
         <div className="grid my-4 grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5" id='articles'>
         {posts.map((post, index) => (

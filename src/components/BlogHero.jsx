@@ -8,7 +8,7 @@ const BlogHero = () => {
     <motion.section className='flex w-full md:p-20 justify-center'
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5, ease: 'easeInOut' }}>
+    transition={{ duration: 0.8, ease: 'easeInOut' }}>
         <div className="flex max-w-2xl justify-center items-center gap-5 flex-wrap md:flex-nowrap">
             <img src={BlogHeroImage} alt="Blog Placholder" className='rounded-lg md:w-[200px] w-[300px]' />
             <div>

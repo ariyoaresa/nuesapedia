@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="bg-green-800 p-4 sticky top-0 z-10 shadow-xl text-white">
       <div className="flex justify-between items-center">
-        <span className="text-lg font-bold">Logoipsum</span>
+        <Link to="/" className="text-lg font-bold">NuesaPedia</Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-4 list-none">
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="flex flex-col gap-2 mt-4 md:hidden list-none">
+        <ul className="flex flex-col gap-2 mt-4 md:hidden list-none text-center">
           {navLinks.map((link, index) => (
             <li key={index} className="hover:underline">
               {link.external ? (
