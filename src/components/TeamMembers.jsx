@@ -34,7 +34,7 @@ const TeamMembers = () => {
         <div className="grid md:grid-cols-3 gap-5 my-4">
             {Team.map((member, index) => (
                 <div key={index} className="card shadow-md hover:-translate-y-2 ease-in-out transition-transform flex flex-col lg:min-w-64 p-3 rounded-lg bg-white justify-center items-center">
-                    <img src={member.image} alt={member.name} className='rounded-full w-24 h-24 mb-2' loading='lazy' />
+                    <img src={member.image} alt={member.name} className='rounded-full w-24 h-24 mb-2' />
                     <h3 className='font-bold text-xl'>{member.name}</h3>
                     <p className='text-gray-600'>{member.title}</p>
                 </div>

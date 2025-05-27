@@ -1,16 +1,28 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const HomeExpect = () => {
   return (
-    <section className='bg-green-800 text-white rounded-3xl'>
-      <h2 className='lg:text-center lg:font-bold'>What You Can Expect from NuesaPedia</h2>
-      <ul>
-        <li>Free access to all PDF files for all students</li>
-        <li>Wide range of PDF files across all departments</li>
-        <li>User-friendly interface for easy navigation</li>
-        <li>Open Source for all to contribute</li>
+    <motion.section className='bg-green-800 text-white rounded-3xl'
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}>
+      <h2 className='text-center lg:font-bold'>What You Can Expect from NuesaPedia</h2>
+      <ul class="space-y-4 text-base sm:text-lg">
+        <li class="border-b border-gray-400 dark:border-gray-600 pb-2">
+          Free access to all PDF files for all students
+        </li>
+        <li class="border-b border-gray-400 dark:border-gray-600 pb-2">
+          Wide range of PDF files across all departments
+        </li>
+        <li class="border-b border-gray-400 dark:border-gray-600 pb-2">
+          User-friendly interface for easy navigation
+        </li>
+        <li class="border-b border-gray-400 dark:border-gray-600 pb-2">
+          Open Source for all to contribute
+        </li>
       </ul>
-    </section>
+    </motion.section>
   )
 }
 
