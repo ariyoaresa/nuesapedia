@@ -7,7 +7,7 @@ const navLinks = [
   { to: '/contact', label: 'Contact' },
   { to: '/blog', label: 'Blog' },
   { href: 'https://github.com/ariyoaresa/nuesapedia', label: 'Contribute', external: true },
-  { to: '#', label: 'Add a PDF' },
+  { to: '/add-pdf', label: 'Add a PDF' },
 ];
 
 const Navbar = () => {

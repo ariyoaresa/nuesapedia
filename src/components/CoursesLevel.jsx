@@ -1,9 +1,9 @@
 import React from 'react'
-import Level100 from '../assets/images/100-level.webp'
-import Level200 from '../assets/images/200-level.webp'
-import Level300 from '../assets/images/300-level.webp'
-import Level400 from '../assets/images/400-level.webp'
-import Level500 from '../assets/images/500-level.webp'
+import Level100 from '../assets/images/100-level.webp?format=webp'
+import Level200 from '../assets/images/200-level.webp?format=webp'
+import Level300 from '../assets/images/300-level.webp?format=webp'
+import Level400 from '../assets/images/400-level.webp?format=webp'
+import Level500 from '../assets/images/500-level.webp?format=webp'
 import { Link } from 'react-router-dom'
 
 const CoursesLevel = () => {
